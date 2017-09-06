@@ -14,6 +14,9 @@ public class HarvesterDriver implements Directions
         Harvester harry = new Harvester(2,2, East, 0);
         harry.harvest();
         harry.turnOff();
+        
+        Planter p = new Planter(2,2, East, -1);
+        p.harvest();
     }
     
     static {
@@ -22,7 +25,7 @@ public class HarvesterDriver implements Directions
         World.setBeeperColor(Color.magenta);
         World.setStreetColor(Color.blue);
         World.setNeutroniumColor(Color.green.darker());
-        World.setDelay(50);  
+        World.setDelay(15);  
         World.setVisible(true);
     }
 }

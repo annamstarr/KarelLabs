@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=Problem3
+comment1.params=
+comment1.target=void\ setField()
+comment10.params=
+comment10.target=void\ repositionOOneToOTwo()
+comment2.params=
+comment2.target=void\ setVerticals()
+comment3.params=
+comment3.target=void\ vertical()
+comment4.params=
+comment4.target=void\ repositionHOneToHTwo()
+comment5.params=
+comment5.target=void\ turnRight()
+comment6.params=
+comment6.target=void\ repositionHToE()
+comment7.params=
+comment7.target=void\ repositionEToLOne()
+comment8.params=
+comment8.target=void\ repositionLOneToLTwo()
+comment9.params=
+comment9.target=void\ repositionLTwoToOOne()
+numComments=11

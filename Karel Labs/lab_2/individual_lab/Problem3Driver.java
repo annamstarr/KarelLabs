@@ -10,17 +10,17 @@ package lab_2.individual_lab;
 import kareltherobot.*;
 import java.awt.Color;
 
-public class Problem2Driver implements Directions
+public class Problem3Driver implements Directions
 {
     public static void main(String args[])  {
-        Problem2 karel = new Problem2(5, 1, North, 16);
+        Problem3 karel = new Problem3(3, 2, North, 50);
         karel.setField();
         karel.turnOff();
     } 
 
     static {
         World.reset(); 
-        World.readWorld("fig3-8.kwld"); 
+        World.readWorld("worlds/hello.kwld"); 
         World.setBeeperColor(Color.magenta);
         World.setStreetColor(Color.blue);
         World.setNeutroniumColor(Color.green.darker());

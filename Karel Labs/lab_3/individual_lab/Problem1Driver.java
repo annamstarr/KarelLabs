@@ -1,26 +1,20 @@
-package lab_2.individual_lab;
+package lab_3.individual_lab;
 
-/**
-   @Author: A. Starr
-      Date:
-   Teacher: Appel
-       Lab: Problem Set 3
-      Misc: Karel plants a garden in a cross-shape
-  */
 import kareltherobot.*;
 import java.awt.Color;
 
-public class Problem2Driver implements Directions
+public class Problem1Driver implements Directions
 {
     public static void main(String args[])  {
-        Problem2 karel = new Problem2(5, 1, North, 16);
-        karel.setField();
+        Problem1 karel = new Problem1(1, 1, West, -1);
+        karel.faceEast();
         karel.turnOff();
+        
     } 
 
     static {
         World.reset(); 
-        World.readWorld("fig3-8.kwld"); 
+        World.readWorld("worlds/fig5-8.kwld"); 
         World.setBeeperColor(Color.magenta);
         World.setStreetColor(Color.blue);
         World.setNeutroniumColor(Color.green.darker());

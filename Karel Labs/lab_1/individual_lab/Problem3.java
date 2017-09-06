@@ -3,7 +3,7 @@ import kareltherobot.*;
 
 
 /**
- * @author :  D. Appel
+ * @author :  A. Starr
  */
 public class Problem3 extends Robot
 {
