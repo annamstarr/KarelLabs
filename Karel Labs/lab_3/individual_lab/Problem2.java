@@ -13,9 +13,85 @@ public class Problem2 extends Robot
     {
         super(st, av, dir, beep);
     }
-
-    public void carpetRooms(){
-        
+    public void carpetRooms() {
+        carpetRoom();
+        carpetRoom();
+        carpetRoom();
+        carpetRoom();
+        carpetRoom();
+        carpetRoom();
+        carpetRoom();
+        carpetRoom();
     }
-}
+    public void carpetRoom(){
+        findRoom();
+        enterRoom();
+        if (checkCieling() && checkLeftWall() && checkRightWall()) {
+            putBeeper();
+        }
+        leaveRoom();
+        reset();
+    }
+    public void findRoom () {
+        move();
+    }
+    public void enterRoom() {
+        turnLeft();
+        move();
+    }
+    public boolean checkLeftWall() {
+        faceWest();
+        if (frontIsClear()) {
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+    public void faceWest() {
+        while(!facingWest()) {
+            turnLeft();
+        }
+    }
+    public void faceSouth() {
+        while(!facingSouth()) {
+            turnLeft();
+        }
+    }
+    public void faceNorth() {
+        while(!facingNorth()) {
+            turnLeft();
+        }
+    }
+    public void faceEast() {
+        while(!facingEast()) {
+            turnLeft();
+        }
+    }
+    public boolean checkRightWall() {
+        faceEast();
+        if (frontIsClear()) {
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+    public boolean checkCieling() {
+            faceNorth();
+                if (frontIsClear()) {
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+    public void leaveRoom() {
+            faceSouth();
+            move();
+        }
+    public void reset() {
+            turnLeft();
+        }
+    }
 
